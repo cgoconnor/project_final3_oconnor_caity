@@ -131,17 +131,18 @@ a:hover {
 }
 
 #nav > a {
-display: none;
+    display: none;
 }
 
 #nav li {
-position: relative;
+    position: relative;
+    list-style-type: none;
 }
 
 /* first level */
 
 #nav > ul {
-height: 3.75em;
+    height: 3.75em;
 }
 
 #nav > ul > li {
@@ -153,9 +154,9 @@ height: 3.75em;
 /* second level */
 
 #nav li ul {
-display: none;
-position: absolute;
-top: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
 }
 
 #nav li:hover ul {
