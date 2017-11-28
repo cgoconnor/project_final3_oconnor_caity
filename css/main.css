@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Bakery;
+    src: url(../fonts/bakery.ttf);
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.no-show {
+    display: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix::after{
+    clear: both;
+}
+
+.index {
+    background-image: url(../img/index-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Bakery', sans-serif;
+    font-size: 3rem;
+    color: #394147;
+}
+
+h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #394147;
+    line-height: 150%;
+}
+
+p,
+li,
+a {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #135a72;
+}
+
+button {
+    padding: 1rem .8rem;
+    cursor: pointer;
+    background-color: #c47db1;
+    border: none;
+    border-radius: .8rem;
+    color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: -.3rem -.3rem #135a72;
+        -webkit-box-shadow: -.3rem .3rem #135a72;
+    }
+
+button:hover {
+    box-shadow: none;
+        -webkit-box-shadow: none;
+    transform: translate(-.3rem, .3rem);
+        -webkit-transform: translate(-.3rem, .3rem);
+}
+
+.secondary-button {
+    background-color: #135a72;
+    color: white;
+    box-shadow: none;
+        -webkit-box-shadow: none;
+}
+
+.secondary-button:hover {
+    transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+}
+
+a {
+    color: #c47db1;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'comfortaa', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
