@@ -3,9 +3,30 @@
     src: url(../fonts/bakery.ttf);
 }
 
-
 html {
     box-sizing: border-box;
+}
+
+.off-canvas-wrapper {
+    overflow: visible;
+}
+
+.off-canvas-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.position-left {
+    display: none;
+}
+
+header, nav, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex: 1 0 auto; /* Use 1 0 auto instead of just 1 for backwards compatibility with other browsers */
 }
 
 *,
@@ -32,7 +53,6 @@ html {
 }
 
 header,
-main,
 footer {
     background-color: rgba(255,255,255,.7);
 }
@@ -60,7 +80,6 @@ li,
 a {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1rem;
-    line-height: 1.4rem;
     color: #135a72;
 }
 
@@ -70,14 +89,23 @@ article {
     text-align: center;
 }
 
+article p {
+    text-align: left;
+}
+
 .wrap {
     background-color: rgba(255,255,255,.7);
-    width: 30%;
-    padding: 1%;
-    margin: 1%;
-    display: inline-block;
+    padding: 1rem;
+    margin: 2rem 1rem;
     box-shadow: -.3rem -.3rem #c0c0c0;
         -webkit-box-shadow: -.3rem .3rem #c0c0c0;
+}
+
+@media (min-width: 600px) {
+    .wrap {
+        width: 25%;
+        display: inline-block;
+    }
 }
 
 button {
@@ -127,7 +155,7 @@ a:hover {
 /* Main navigation styling, from https://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly */
 
 #nav {
-    /* container */
+    background-color: #135a72;
 }
 
 #nav > a {
@@ -137,6 +165,25 @@ a:hover {
 #nav li {
     position: relative;
     list-style-type: none;
+    display: inline;
+    padding: 1rem;
+    text-align: center;
+}
+
+#nav li ul li {
+    margin: 0;
+}
+
+#nav li ul li a{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: #d6e813;
+    margin: 0;
+}
+
+#nav li a {
+        color: white;
 }
 
 /* first level */
@@ -160,6 +207,18 @@ a:hover {
 }
 
 #nav li:hover ul {
+    display: block;
+}
+
+/* third level */
+
+#nav li ul li ul li {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav li ul li:hover ul li{
     display: block;
 }
 
@@ -203,3 +262,7 @@ a:hover {
 }
 
 /* End main navigation styles */
+
+footer {
+    align-self: bottom;
+}

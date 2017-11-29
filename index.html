@@ -9,89 +9,94 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="index clearfix">
-    <header>
-        <h1>Westbrook Bakery</h1>
-        <nav id="nav">
-            <a href="#nav" title="Show navigation">Show navigation</a>
-            <a href="#" title="Hide navigation">Hide navigation</a>
-            <ul>
-                <li><a href="services.html">Services</a>
-                    <ul>
-                        <li><a href="services.html#catering">Catering</a>
-                            <ul>
-                                <li><a href="services.html#weddings">Weddings</a></li>
-                                <li><a href="services.html#business">Business Gatherings</a></li>
-                                <li><a href="services.html#family">Family Reunions</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="services.html#classes">Classes</a></li>
-                        <li><a href="services.html#shipping">Shipping</a></li>
-                        <li><a href="services.html#birthday">Birthday Parties</a></li>
-                    </ul>
-                </li>
-                <li><a href="products.html">Products</a>
-                    <ul>
-                        <li><a href="products.html#cakes">Cakes and Cupcakes</a></li>
-                        <li><a href="products.html#pastries">Pastries, Scones and Cookies</a></li>
-                        <li><a href="products.html#breads">Breads</a></li>
-                        <li><a href="products.html#pies">Pies</a></li>
-                        <li><a href="products.html#order">Order Now</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About</a>
-                    <ul>
-                        <li><a href="about.html#history">Our Story</a></li>
-                        <li><a href="about.html#locations">Locations</a>
-                            <ul>
-                                <li><a href="about.html#downtown">Downtown</a></li>
-                                <li><a href="about.html#south-valley">South Valley</a></li>
-                                <li><a href="about.html#west">West</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html#history">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article id="mission">
-            <p>We provide a fresh spin on old favorites in a warm, welcoming environment</p>
-        </article>
-        <article id="photo-links">
-            <section id="visit-us" class="wrap">
-                <h2>Visit us today!</h2>
-                <img src="" alt="location icon" />
-                <p>Find scrumptious treats at one of our three convenient locations in the Salt Lake Valley</p>
-                <a href="about.html#locations"><button>I want to go to there  &rarr;</button></a>
-            </section>
-            <section id="shop-now" class="wrap">
-                <h2>Shop now!</h2>
-                <img src="" alt="cake icon" />
-                <p>Place an order for pickup, or ship select sweets across the continental U.S.</p>
-                <a href="products.html#order"><button>Time to treat myself  &rarr;</button></a>
-            </section>
-            <section id="classes" class="wrap">
-                <h2>New classes!</h2>
-                <img src="" alt="pastry bag icon" />
-                <p>Check out our new class schedule. Perfect for girls night, date night, or really any night.</p>
-                <a href="services.html#classes"><button>Make me a pro  &rarr;</button></a>
-            </section>
-        </article>
-    </main>
-    <footer>
-        <nav id="social-media">
-            <a href="facebook.com"><img src="" alt="facebook" /></a>
-            <a href="pinterest.com"><img src="" alt="pinterest" /></a>
-            <a href="instagram.com"><img src="" alt="instagram" /></a>
-            <a href="mailto:info@westbrook.com"><img src="" alt="email" /></a>
-        </nav>
-        <form>
-            <label for="newsletter">Sign up for our weekly email newsletter!</label>
-            <input type="text" name="newsletter">
-        </form>
-        <p>Copyright 2017 by Westbrook Bakery</p>
-    </footer>
+    <div class="off-canvas-wrapper">
+        <div id="off-canvas" class="off-canvas position-left" data-off-canvas>My Off-Canvas</div>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <header>
+            <h1>Westbrook Bakery</h1>
+            <nav id="nav">
+                <a href="#nav" title="Show navigation">&#9776;</a>
+                <a href="#" title="Hide navigation">&times;</a>
+                <ul>
+                    <li><a href="services.html">Services</a>
+                        <ul>
+                            <li><a href="services.html#catering">Catering</a>
+                                <ul>
+                                    <li><a href="services.html#weddings">Weddings</a></li>
+                                    <li><a href="services.html#business">Business Gatherings</a></li>
+                                    <li><a href="services.html#family">Family Reunions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="services.html#classes">Classes</a></li>
+                            <li><a href="services.html#shipping">Shipping</a></li>
+                            <li><a href="services.html#birthday">Birthday Parties</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Products</a>
+                        <ul>
+                            <li><a href="products.html#cakes">Cakes and Cupcakes</a></li>
+                            <li><a href="products.html#pastries">Pastries, Scones and Cookies</a></li>
+                            <li><a href="products.html#breads">Breads</a></li>
+                            <li><a href="products.html#pies">Pies</a></li>
+                            <li><a href="products.html#order">Order Now</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="about.html#history">Our Story</a></li>
+                            <li><a href="about.html#locations">Locations</a>
+                                <ul>
+                                    <li><a href="about.html#downtown">Downtown</a></li>
+                                    <li><a href="about.html#south-valley">South Valley</a></li>
+                                    <li><a href="about.html#west">West</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html#history">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="mission">
+                <p>We provide a fresh spin on old favorites in a warm, welcoming environment</p>
+            </article>
+            <article id="photo-links">
+                <section id="visit-us" class="wrap">
+                    <h2>Visit us today!</h2>
+                    <img src="" alt="location icon" />
+                    <p>Find scrumptious treats at one of our three convenient locations in the Salt Lake Valley</p>
+                    <a href="about.html#locations"><button>I want to go to there  &rarr;</button></a>
+                </section>
+                <section id="shop-now" class="wrap">
+                    <h2>Shop now!</h2>
+                    <img src="" alt="cake icon" />
+                    <p>Place an order for pickup, or ship select sweets across the continental U.S.</p>
+                    <a href="products.html#order"><button>Time to treat myself  &rarr;</button></a>
+                </section>
+                <section id="classes" class="wrap">
+                    <h2>New classes!</h2>
+                    <img src="" alt="pastry bag icon" />
+                    <p>Check out our new class schedule. Perfect for girls night, date night, or really any night.</p>
+                    <a href="services.html#classes"><button>Make me a pro  &rarr;</button></a>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <nav id="social-media">
+                <a href="facebook.com"><img src="" alt="facebook" /></a>
+                <a href="pinterest.com"><img src="" alt="pinterest" /></a>
+                <a href="instagram.com"><img src="" alt="instagram" /></a>
+                <a href="mailto:info@westbrook.com"><img src="" alt="email" /></a>
+            </nav>
+            <form>
+                <label for="newsletter">Sign up for our weekly email newsletter!</label>
+                <input type="text" name="newsletter">
+            </form>
+            <p>Copyright 2017 by Westbrook Bakery</p>
+        </footer>
+    </div>
+</div>
     <script src="js/main.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/doubletapgo.js"></script>
