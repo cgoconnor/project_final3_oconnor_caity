@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="slimmenu.min.css" type="text/css">
 </head>
 <body class="index clearfix">
     <div class="off-canvas-wrapper">
@@ -14,12 +15,10 @@
         <div class="off-canvas-content" data-off-canvas-content>
         <header>
             <h1>Westbrook Bakery</h1>
-            <nav id="nav">
-                <a href="#nav" title="Show navigation">&#9776;</a>
-                <a href="#" title="Hide navigation">&times;</a>
+            <nav>
                 <ul>
                     <li><a href="services.html">Services</a>
-                        <ul>
+                        <ul  id="navigation" class="slimmenu">
                             <li><a href="services.html#catering">Catering</a>
                                 <ul>
                                     <li><a href="services.html#weddings">Weddings</a></li>
@@ -99,6 +98,6 @@
 </div>
     <script src="js/main.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/doubletapgo.js"></script>
+    <script src="jquery.slimmenu.min.js"></script>
 </body>
 </html>
