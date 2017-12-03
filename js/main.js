@@ -6,6 +6,6 @@ $(document).ready(function () {
             animSpeed: 'medium',
             easingEffect: null,
             indentChildren: false,
-            childrenIndenter: '&nbsp;'
+            childrenIndenter: '&nbsp;',
         });
 });
