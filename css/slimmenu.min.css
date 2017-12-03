@@ -6,7 +6,7 @@
     color: #FFF;
     font-size: 16px;
     line-height: 48px;
-    background-color: #999;
+    background-color: #135a72;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box
@@ -14,15 +14,13 @@
 
 .collapse-button {
     position: absolute;
-    right: 8px;
+    left: .75rem;
     top: 50%;
-    width: 40px;
-    padding: 7px 10px;
+    padding: .5rem .75rem;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: center;
-    background-color: #0E0E0E;
-    border-radius: 2px;
+    border-radius: 1%;
     cursor: pointer;
     transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
