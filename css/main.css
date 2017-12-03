@@ -157,32 +157,43 @@ a:hover {
 }
 
 /* Main navigation styles */
-#navigation {
+.main-nav {
     width: 100%;
 }
 
-#navigation,
+#navigation {
+    width: 60%;
+    padding-left: 4%;
+}
+
+.main-nav,
 .menu-item a,
-.sub-toggle,
-ul.slimmenu li a,
-ul.slimmenu li .sub-toggle,
-ul.slimmenu li .sub-toggle > i
-{
+ul.slimmenu li a {
     background-color: #135a72;
     color: #ffffff;
     font-weight: bold;
 }
 
+ul.slimmenu li .submenu li .subsubmenu li a,
 ul.slimmenu li .submenu li a {
     background-color: #d6e813;
-    display: block;
     width: 100%;
+    color: #394147;
+    border-bottom: .01rem white solid;
+}
+
+ul.slimmenu li .submenu li .subsubmenu:last-child,
+ul.slimmenu li .submenu:last-child {
+    border: none;
+}
+
+ul.slimmenu li .submenu li .subsubmenu li a:hover,
+ul.slimmenu li .submenu li a:hover {
+    background-color: #c47db1;
 }
 
 ul.slimmenu li .submenu li .subsubmenu li a {
     background-color: #ffd022;
-    display: block;
-    width: 100%;
 }
 /* End main navigation styles */
 

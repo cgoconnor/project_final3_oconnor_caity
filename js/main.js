@@ -3,7 +3,7 @@ $(document).ready(function () {
         {
             resizeWidth: '800',
             collapserTitle: 'Main Menu',
-            animSpeed: 'medium',
+            animSpeed: 'fast',
             easingEffect: null,
             indentChildren: false,
             childrenIndenter: '&nbsp;',
