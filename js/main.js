@@ -8,4 +8,7 @@ $(document).ready(function () {
             indentChildren: false,
             childrenIndenter: '&nbsp;',
         });
+    $(function () {
+        $('#social-media a img:hover').textillate();
+    });
 });
