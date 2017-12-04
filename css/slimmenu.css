@@ -14,13 +14,14 @@
 
 .collapse-button {
     position: absolute;
-    left: .75rem;
+    right: 8px;
     top: 50%;
-    padding: .5rem .75rem;
+    width: 40px;
+    padding: 7px 10px;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 14px;
     text-align: center;
-    border-radius: 1%;
+    border-radius: 2px;
     cursor: pointer;
     transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
@@ -34,8 +35,8 @@
 
 .collapse-button:hover,
 .collapse-button:focus {
-    color: #135a72;
-    background-color: #d6e813
+
+    background-color: #d6e813;
 }
 
 .collapse-button .icon-bar {
@@ -44,7 +45,8 @@
     width: 18px;
     margin: 2px 0;
     background-color: #F5F5F5;
-    border-radius: 1px
+    border-radius: 1px;
+    color: #135a72;
 }
 
 ul.slimmenu {
@@ -68,40 +70,40 @@ ul.slimmenu.collapsed li {
     display: block;
     width: 100%;
     box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
 }
 
 ul.slimmenu.collapsed li>ul {
     position: static;
-    display: none;
+    display: none
 }
 
 ul.slimmenu.collapsed li a {
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+ul.slimmenu.collapsed li .sub-toggle {
+    height: 40px
 }
 
 ul.slimmenu li {
-    width: calc(100% / 3);
     position: relative;
     float: left;
     display: inline-block;
-    background-color: #c47db1
+    background-color: #AAA
 }
 
 ul.slimmenu li ul {
-    width: 100%;
-    padding: 0;
     margin: 0;
     list-style-type: none
 }
 
 ul.slimmenu li ul li {
-    width: 100%;
     background: #bbbbbb
 }
 
@@ -124,11 +126,10 @@ ul.slimmenu li>ul>li ul {
 }
 
 ul.slimmenu li a {
-    width: 100%;
-    padding: 1rem;
     display: block;
+    padding: 12px 64px 12px 16px;
     color: #333;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     transition: background-color 0.5s ease-out;
     -o-transition: background-color 0.5s ease-out;
@@ -138,7 +139,7 @@ ul.slimmenu li a {
 
 ul.slimmenu li a:hover {
     text-decoration: none;
-    background-color: #c47db1;
+    background-color: #d6e813;
 }
 
 ul.slimmenu li .sub-toggle {

@@ -45,6 +45,10 @@ main {
     clear: both;
 }
 
+.hide {
+    display: none;
+}
+
 .index {
     background-image: url(../img/index-background.jpg);
     background-size: cover;
@@ -54,7 +58,12 @@ main {
 
 header,
 footer {
-    background-color: rgba(255,255,255,.7);
+    background-color: #ffffff;
+}
+
+.logo {
+    padding: 6%;
+    display: block;
 }
 
 h1,
@@ -78,6 +87,7 @@ h2 {
 p,
 li,
 a {
+    margin: 0 auto;
     font-family: 'Comfortaa', sans-serif;
     font-size: 1rem;
     color: #135a72;
@@ -97,12 +107,31 @@ article p {
     text-align: left;
 }
 
+#mission {
+    margin-top: 1rem;
+    background-color: #d6e813;
+    padding: 1rem;
+}
+#mission p {
+    font-weight: bold;
+    color: #394147;
+}
+
 .wrap {
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255,255,255,.9);
     padding: 1rem;
     margin: 2rem 1rem;
-    box-shadow: -.3rem -.3rem #c0c0c0;
-        -webkit-box-shadow: -.3rem .3rem #c0c0c0;
+    box-shadow: -.3rem -.3rem #394147;
+        -webkit-box-shadow: -.3rem .3rem #394147;
+}
+
+.wrap p {
+    font-size: .9rem;
+}
+
+.icon {
+    width: 50%;
+    padding: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -110,9 +139,15 @@ article p {
         width: 25%;
         display: inline-block;
     }
+
+    #navigation {
+        width: 60%;
+        padding-left: 4%;
+    }
 }
 
 button {
+    margin: 1rem 0 0;
     padding: 1rem .8rem;
     cursor: pointer;
     background-color: #c47db1;
@@ -157,13 +192,9 @@ a:hover {
 }
 
 /* Main navigation styles */
+.logo,
 .main-nav {
     width: 100%;
-}
-
-#navigation {
-    width: 60%;
-    padding-left: 4%;
 }
 
 .main-nav,
