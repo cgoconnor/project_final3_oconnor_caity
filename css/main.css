@@ -98,7 +98,12 @@ ul {
     padding-left: 0;
 }
 
+section{
+    padding: 2%;
+}
+
 article {
+    padding: 2%;
     width: 96%;
     margin: auto;
     text-align: center;
@@ -253,9 +258,16 @@ footer {
     padding: .3rem;
     margin: auto;
     width: calc(100% - .6rem);
+    max-width: 60px;
+
 }
 
 label,
 input {
     display: block;
+}
+
+.map iframe{
+    width: 90%;
+    border: white solid 3px;
 }

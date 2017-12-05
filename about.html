@@ -2,23 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Westbrook Bakery - About</title>
+    <title>Westbrook Bakery</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/slimmenu.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header>
-        <h1>Westbrook Bakery</h1>
-        <nav>
-            <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="index clearfix">
+    <div class="off-canvas-wrapper">
+        <div id="off-canvas" class="off-canvas position-left" data-off-canvas>My Off-Canvas</div>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <header>
+            <a href="index.html"><img src="img/westbrook-bakery-logo.png" alt="Westbrook Bakery" class="logo" /></a>
+            <h1 class="hide">Westbrook Bakery</h1>
+            <nav class="main-nav clearfix">
+                <ul id="navigation" class="slimmenu">
+                    <li class="menu-item has-submenu"><a href="services.html">Services</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#catering">Catering</a></li>
+                            <li><a href="services.html#classes">Classes</a></li>
+                            <li><a href="services.html#shipping">Shipping</a></li>
+                            <li><a href="services.html#birthday">Birthday Parties</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="products.html">Products</a>
+                        <ul class="submenu">
+                            <li><a href="products.html#cakes">Cakes and Cupcakes</a></li>
+                            <li><a href="products.html#pastries">Pastries, Scones and Cookies</a></li>
+                            <li><a href="products.html#breads">Breads</a></li>
+                            <li><a href="products.html#pies">Pies</a></li>
+                            <li><a href="products.html#order">Order Now</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="about.html">About</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#history">Our Story</a></li>
+                            <li><a href="about.html#locations">Locations</a>
+                                <ul class="subsubmenu">
+                                    <li><a href="about.html#downtown">Downtown</a></li>
+                                    <li><a href="about.html#south-valley">South Valley</a></li>
+                                    <li><a href="about.html#west">West</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html#history">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     <main>
         <article id="history">
             <h2>Our story</h2>
@@ -27,19 +60,31 @@
         <article id="locations">
             <section id="downtown">
                 <h2>Downtown</h2>
-                <iframe>map</iframe>
+                <div class="map">
+                    <iframe src="https://www.bing.com/maps/embed?h=800&w=800&cp=40.76914155212018~-111.90695323581394&lvl=15&typ=s&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                    </iframe>
+                    <div>
+                        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps/embed?h=800&w=800&cp=40.76914155212018~-111.90695323581394&lvl=15&typ=s&sty=r&src=SHELL&FORM=MBEDV8">View Larger Map</a>
+                            &nbsp; | &nbsp;
+                            <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/embed?h=800&w=800&cp=40.76914155212018~-111.90695323581394&lvl=15&typ=s&sty=r&src=SHELL&FORM=MBEDV8">Get Directions</a>
+                    </div>
+                </div>
                 <p>hours</p>
                 <a href="services.html#classes">Class Schedule</a>
             </section>
             <section id="south-valley">
                 <h2>South Valley</h2>
-                <iframe>map</iframe>
+                <div class="map">
+                    <iframe>map</iframe>
+                </div>
                 <p>hours</p>
                 <a href="services.html#classes">Class Schedule</a>
             </section>
             <section id="west">
                 <h2>West Valley</h2>
-                <iframe>map</iframe>
+                <div class="map">
+                    <iframe>map</iframe>
+                </div>
                 <p>hours</p>
                 <a href="services.html#classes">Class Schedule</a>
             </section>
@@ -52,10 +97,10 @@
     </main>
     <footer>
         <nav id="social-media">
-            <a href="facebook.com"><img src="" alt="facebook" /></a>
-            <a href="pinterest.com"><img src="" alt="pinterest" /></a>
-            <a href="instagram.com"><img src="" alt="instagram" /></a>
-            <a href="mailto:info@westbrook.com"><img src="" alt="email" /></a>
+            <a target="_blank" href="http://facebook.com"><img src="img/icon-facebook.png" alt="facebook" data-in-effect="pulse" /></a>
+            <a target="_blank" href="http://pinterest.com"><img src="img/icon-pinterest.png" alt="pinterest" /></a>
+            <a target="_blank" href="http://instagram.com"><img src="img/icon-instagram.png" alt="instagram" /></a>
+            <a target="_blank" href="mailto:info@westbrook.com"><img src="img/icon-email.png" alt="email" /></a>
         </nav>
         <form>
             <label for="newsletter">Sign up for our weekly email newsletter!</label>
@@ -63,6 +108,11 @@
         </form>
         <p>Copyright 2017 by Westbrook Bakery</p>
     </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slimmenu.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

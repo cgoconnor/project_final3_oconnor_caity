@@ -11,4 +11,6 @@ $(document).ready(function () {
     $(function () {
         $('#social-media a img:hover').textillate();
     });
+    var cw = $('.map iframe').width();
+    $('.map iframe').css({'height': cw + 'px'});
 });
