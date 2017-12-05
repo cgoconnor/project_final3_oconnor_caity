@@ -88,6 +88,7 @@ p,
 li,
 a,
 label {
+    padding: .6rem 0;
     margin: 0 auto;
     font-family: 'Comfortaa', sans-serif;
     font-size: 1rem;
@@ -113,7 +114,7 @@ article p {
     text-align: left;
 }
 
-#mission {
+#mission, .green-background {
     margin-top: 1rem;
     background-color: rgba(214, 232, 19, .9);
     padding: 1rem;
@@ -270,4 +271,9 @@ input {
 .map iframe{
     width: 90%;
     border: white solid 3px;
+}
+
+#history .wrap,
+#locations .wrap {
+    margin: 1rem 0;
 }
