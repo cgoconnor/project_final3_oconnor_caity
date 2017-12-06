@@ -6,8 +6,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" href="css/slimmenu.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/slimmenu.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fullcalendar.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="products clearfix">
@@ -49,28 +50,31 @@
             </nav>
         </header>
     <main>
-        <h1>Classes</h1>
-        <p>All of our classes are held at our South Valley location in Draper.</p>
-        <article id="classes">
-            <section id="schedule">
+        <h1 class="green-background">Classes</h1>
+        <p>All classes are held at our South Valley location in Draper.</p>
+        <article id="classes" >
+            <section id="schedule" class="wrap">
                 <h2>Class schedule</h2>
-                <h3>Cake Decorating</h3>
-                <h3>Macron Demonstration</h3>
-                <button><a href="about.html#south-valley">Get Directions</a></button>
+                <div id="calendar"></div>
+                <div id="eventContent">
+                    <p id="eventInfo"></p>
+                    <p><span id="startTime"></span></p>
+                </div>
+                <a href="about.html#south-valley"><button>Get Directions</button></a>
             </section>
-            <section id="faq">
+            <section id="faq" class="wrap">
                 <h2>Class FAQ</h2>
-                <ul>
+                <ul class="level1">
                     <li>Q: How much do classes cost?</li>
-                        <ul>
+                        <ul class="level2">
                             <li>A: Demonstrations are free, but you must register in advance, as space is limited. Decorating classes are $25.00. This covers the cost of supplies</li>
                         </ul>
                     <li>Q: Do I need to bring anything?</li>
-                        <ul>
+                        <ul class="level2">
                             <li>A: For demonstrations, you do not need to bring anything, except a pen and notebook to take notes if you wish. For decorating classes, the cost of the class includes supplies. However, you are welcome to bring your own.</li>
                         </ul>
                     <li>Q: Do I get to sample the treats?</li>
-                        <ul>
+                        <ul class="level2">
                             <li>A: Yes! For demonstrations, we'll make sure you get a sample of whatever we make. For decorating classes, you get to take home the mini-cake you decorate.</li>
                         </ul>
                     </ul>
@@ -99,6 +103,9 @@
 <script src="js/jquery.textillate.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.form-validator.min.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -100,4 +100,33 @@ $(document).ready(function () {
         }
     });
 
+    $('.tooltip').tooltipster();
+    //calendar plugin
+
+    $('#calendar').fullCalendar({
+        events: [
+            {
+                title: 'Macron Demonstration',
+                start: '2017-12-07T19:00:00',
+                end: '2017-12-07T20:00:00'
+            },
+            {
+                title: 'Cake Decorating - Beginner',
+                start: '2017-12-14T19:00:00',
+                end: '2017-12-14T20:00:00'
+            },
+            {
+                title: 'Cake Decorating - Advanced',
+                start: '2018-01-04T19:00:00',
+                end: '2018-01-04T20:00:00'
+            }
+        ],
+        eventRender: function (calEvent, element) {
+            element.click(function () {
+                $('#startTime').html(calEvent.start.format('MMM Do h:mm A'));
+                $('#eventInfo').html(calEvent.title);
+                $('#eventContent').addClass('show')
+            });
+        }
+    });
 });

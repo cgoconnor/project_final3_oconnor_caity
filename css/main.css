@@ -49,6 +49,10 @@ main {
     display: none;
 }
 
+.show {
+    display: block !important;
+}
+
 .index {
     background-image: url(../img/index-background.jpg);
     background-size: cover;
@@ -354,5 +358,38 @@ input[type="email"] {
 }
 
 .valid {
+    display: none;
+}
+#faq ul {
+    width: 96%;
+}
+
+#faq li {
+    text-align: left;
+}
+
+.level1,
+.level2{
+    list-style-type: none;
+}
+
+.level1 li{
+    font-weight: bold;
+}
+
+.level2 li{
+    font-weight: normal;
+}
+
+#classes .wrap {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#calendar {
+    z-index: 0;
+}
+
+#eventContent {
     display: none;
 }

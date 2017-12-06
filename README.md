@@ -15,3 +15,5 @@ https://www.w3schools.com/jquery/jquery_slide.asp
 https://www.electrictoolbox.com/remove-table-cellpadding-cellspacing-css/
 * https://github.com/victorjonsson/jQuery-Form-Validator/
 * https://www.sitepoint.com/10-jquery-form-validation-plugins/
+https://fullcalendar.io/docs/mouse/eventMouseover/
+http://www.mikesmithdev.com/fullcalendar-jquery-ui-modal/
