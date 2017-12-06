@@ -87,4 +87,14 @@ $(document).ready(function () {
             $('#breads .category').text('Breads');
         }
     });
+
+    //validation plugin
+    var $successMsg = $('.alert');
+    $.validate({
+        errorMessageClass: 'error',
+        onSuccess: function () {
+            $successMsg.show();
+            return false; // stops submitting
+        }
+    });
 });

@@ -94,7 +94,8 @@ h2 {
 p,
 li,
 a,
-label {
+label,
+input {
     padding: .6rem 0;
     margin: 0 auto;
     font-family: 'Comfortaa', sans-serif;
@@ -332,4 +333,26 @@ td p {
 
 th p {
     text-align: center;
+}
+
+input[type="email"] {
+    width: 90%;
+    padding: .5rem;
+    margin: auto;
+}
+
+/* form validation */
+.alert {
+  display: none;
+}
+
+/**
+ * Error color for the validation plugin
+ */
+.error {
+  color: #e74c3c;
+}
+
+.valid {
+    display: none;
 }
