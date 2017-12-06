@@ -100,7 +100,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.tooltip').tooltipster();
     //calendar plugin
 
     $('#calendar').fullCalendar({
@@ -136,3 +135,36 @@ $(document).ready(function () {
         }
     });
 });
+
+function popupFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+
+var submitForm = document.getElementById('email-form');
+submitForm.onsubmit = popupFunction;
+
+var monthMenu = document.getElementById('month');
+function birthdayFunction() {
+    var month = monthMenu.value;
+    var twentyNine = document.getElementById('month29');
+    var thirty = document.getElementById('month30');
+    var thirtyOne = document.getElementById('month31');
+    if (month.value === [
+        'jan',
+        'mar',
+        'may',
+        'jul',
+        'aug',
+        'oct',
+        'dec'
+    ]) {
+        thirtyOne.style.display = 'block';
+    } else if (month === 'February') {
+        twentyNine.style.display = 'block';
+    } else {
+        thirty.style.display = 'block';
+    }
+}
+
+monthMenu.onclick = birthdayFunction;

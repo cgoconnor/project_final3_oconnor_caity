@@ -71,7 +71,9 @@ footer {
 }
 
 .logo {
-    padding: 6%;
+    max-width: 360px;
+    margin: auto;
+    padding: 2rem;
     display: block;
 }
 
@@ -130,12 +132,20 @@ article p {
     text-align: left;
 }
 
+#our-menu {
+    width: 90%;
+    margin: auto;
+}
+
 #mission, .green-background {
     margin-top: 1rem;
     background-color: rgba(214, 232, 19, .9);
     padding: 1rem;
     border-radius: 10px;
     border: 2px rgba(255,255,255,.7) solid;
+    width: 94%;
+    max-width: 900px;
+    margin: 1rem auto;
 }
 #mission p {
     font-weight: bold;
@@ -145,7 +155,7 @@ article p {
 .wrap {
     background-color: rgba(255,255,255,.9);
     padding: 1rem;
-    margin: 2rem 1rem;
+    margin: 2rem .7rem;
     box-shadow: -.3rem -.3rem #394147;
         -webkit-box-shadow: -.3rem .3rem #394147;
 }
@@ -159,17 +169,6 @@ article p {
     padding: 1rem;
 }
 
-@media (min-width: 600px) {
-    .wrap {
-        width: 25%;
-        display: inline-block;
-    }
-
-    #navigation {
-        width: 60%;
-        padding-left: 4%;
-    }
-}
 
 .primary-button {
     margin: 1rem 0 0;
@@ -233,6 +232,7 @@ ul.slimmenu li a {
     background-color: #135a72;
     color: #ffffff;
     font-weight: bold;
+    width: 100%;
 }
 
 ul.slimmenu li .submenu li .subsubmenu li a,
@@ -250,7 +250,7 @@ ul.slimmenu li .submenu:last-child {
 
 ul.slimmenu li .submenu li .subsubmenu li a:hover,
 ul.slimmenu li .submenu li a:hover {
-    background-color: #c47db1;
+    background-color: #ffffff;
 }
 
 ul.slimmenu li .submenu li .subsubmenu li a {
@@ -269,6 +269,10 @@ footer {
     background-color: #ffffff;
 }
 
+#social-links {
+        max-width: 500px;
+        margin: auto;
+}
 #social-media a {
     display: inline-block;
     width: 23.8%;
@@ -298,14 +302,14 @@ input {
     font-weight: bold;
 }
 
-#history .wrap,
+/*#history .wrap,
 #locations .wrap,
 #contact .wrap,
 #cakes .wrap,
 #pastries .wrap,
 #breads .wrap {
     margin: 1rem 0;
-}
+}*/
 
 .slideout {
     display: none;
@@ -342,6 +346,7 @@ th p {
 
 input[type="email"] {
     width: 90%;
+    max-width: 500px;
     padding: .5rem;
     margin: auto;
 }
@@ -400,4 +405,110 @@ input[type="email"] {
     z-index:999;
     background-color:white;
     width: 90%;
+}
+
+.fc-center h2 {
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+
+footer label,
+footer p {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+@media (min-width: 480px) {
+    .wrap {
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    #schedule.wrap {
+        width: 99%;
+    }
+
+    #faq.wrap,
+    #history div.wrap {
+        width: 80%;
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 600px) {
+    article {
+        width: 98%;
+        margin: auto;
+    }
+    .wrap {
+        vertical-align: top;
+        width: 29%;
+        margin: .5rem;
+        display: inline-block;
+    }
+
+    #navigation {
+        width: 80%;
+        padding-left: 4%;
+    }
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+#month29,
+#month30,
+#month31 {
+    display: none;
 }

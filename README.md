@@ -17,3 +17,4 @@ https://www.electrictoolbox.com/remove-table-cellpadding-cellspacing-css/
 * https://www.sitepoint.com/10-jquery-form-validation-plugins/
 https://fullcalendar.io/docs/mouse/eventMouseover/
 http://www.mikesmithdev.com/fullcalendar-jquery-ui-modal/
+https://www.w3schools.com/howto/howto_js_popup.asp
