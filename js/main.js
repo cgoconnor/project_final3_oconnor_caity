@@ -13,4 +13,26 @@ $(document).ready(function () {
     });
     var cw = $('.map iframe').width();
     $('.map iframe').css({'height': cw + 'px'});
+
+//custom jquery to slide out content on products page - tutorial: https://www.hongkiat.com/blog/jquery-sliding-navigation/
+//https://www.w3schools.com/jquery/jquery_slide.asp
+    $('.category').on('click', function (e) {
+        e.preventDefault();
+
+        var display = $('.slideout').css('display');
+
+        if (display === 'none') {
+            // $(this).addClass('open');
+            showItems();
+        } else {
+            hideItems();
+        }
+        function showItems() {
+            $('.slideout').slideDown('slow');
+        }
+
+        function hideItems() {
+            $('.slideout').slideUp('slow');
+        }
+    }); // end click event handler
 });

@@ -2,37 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Westbrook Bakery - Menu</title>
+    <title>Westbrook Bakery</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/slimmenu.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header>
-        <h1>Westbrook Bakery</h1>
-        <nav>
-            <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="products clearfix">
+    <div class="off-canvas-wrapper">
+        <div id="off-canvas" class="off-canvas position-left" data-off-canvas>My Off-Canvas</div>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <header>
+            <a href="index.html"><img src="img/westbrook-bakery-logo.png" alt="Westbrook Bakery" class="logo" /></a>
+            <h1 class="hide">Westbrook Bakery</h1>
+            <nav class="main-nav clearfix">
+                <ul id="navigation" class="slimmenu">
+                    <li class="menu-item has-submenu"><a href="services.html">Services</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#catering">Catering</a></li>
+                            <li><a href="services.html#classes">Classes</a></li>
+                            <li><a href="services.html#shipping">Shipping</a></li>
+                            <li><a href="services.html#birthday">Birthday Parties</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="products.html">Products</a>
+                        <ul class="submenu">
+                            <li><a href="products.html#cakes">Cakes and Cupcakes</a></li>
+                            <li><a href="products.html#pastries">Pastries, Scones and Cookies</a></li>
+                            <li><a href="products.html#breads">Breads</a></li>
+                            <li><a href="products.html#pies">Pies</a></li>
+                            <li><a href="products.html#order">Order Now</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="about.html">About</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#history">Our Story</a></li>
+                            <li><a href="about.html#locations">Locations</a>
+                                <ul class="subsubmenu">
+                                    <li><a href="about.html#downtown">Downtown</a></li>
+                                    <li><a href="about.html#south-valley">South Valley</a></li>
+                                    <li><a href="about.html#west">West</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html#history">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        <h1>Our Menu</h1>
-        <p>Lorem ipsum</p>
-        <article id="cakes">
-            <h2>Cakes and Cupcakes</h2>
+        <h1 class="green-background">Our Menu</h1>
+        <article id="cakes" class="wrap item-container">
+            <img src="img/cakes-cupcakes.jpg" alt="Tray of Cupcakes" />
+            <h2><button class="category secondary-button">Cakes and Cupcakes</button></h2>
+            <div class="slideout">
+                <div id="c-item1" class="item">
+                    <h3>Sheet Cakes</h3>
+                    <img src="img/sheet-cake.jpg" alt="Chocolate Sheet Cake"/>
+                </div>
+                <div id="c-item2" class="item">
+                    <h3>Tiered and Specialty Cakes</h3>
+                    <img src="img/wedding-cake.jpg" alt="Simple White Wedding Cake Topped with Flowers" />
+                </div>
+                <div id="c-item3" class="item">
+                    <h3>Cupcakes</h3>
+                    <img src="img/carrot-cupcake.jpg" alt="Single Carrot Cupcake" />
+                </div>
+            </div>
         </article>
-        <article id="pastries">
-            <h2>Pastries, Scones, and Cookies</h2>
+        <article id="pastries" class="wrap item-container">
+            <img src="img/pastries.jpg" alt="Assorted boxes of pastries" />
+            <h2><button class="category secondary-button">Pastries, Scones, and Cookies</button></h2>
+            <div class="slideout">
+                <div id="p-item1" class="item">
+                    <h3>Apricot Ginger Scones</h3>
+                </div>
+                <div id="p-item2" class="item">
+                    <h3>Eclairs</h3>
+                </div>
+                <div id="p-item3" class="item">
+                    <h3>Canollis</h3>
+                </div>
+                <div id="p-item4" class="item">
+                    <h3>Cookies</h3>
+                </div>
+            </div>
+
         </article>
-        <article id="breads">
-            <h2>Breads</h2>
-        </article>
-        <article id="pies">
-            <h2>Pies</h2>
+        <article id="breads" class="wrap item-container">
+            <img src="img/bread.jpg" alt="hands holding artisan loaf of bread in tea towel" />
+            <h2><button class="category secondary-button">Breads</button></h2>
+            <div class="slideout">
+                <div id="b-item1" class="item">
+                    <h3>Whole Wheat Bread</h3>
+                </div>
+                <div id="b-item2" class="item">
+                    <h3>Cinnamon Bread</h3>
+                </div>
+                <div id="b-item3" class="item">
+                    <h3>Focaccia</h3>
+                </div>
+            </div>
         </article>
         <article id="order">
             <h2>Order now</h2>
@@ -40,10 +112,10 @@
     </main>
     <footer>
         <nav id="social-media">
-            <a href="facebook.com"><img src="" alt="facebook" /></a>
-            <a href="pinterest.com"><img src="" alt="pinterest" /></a>
-            <a href="instagram.com"><img src="" alt="instagram" /></a>
-            <a href="mailto:info@westbrook.com"><img src="" alt="email" /></a>
+            <a target="_blank" href="http://facebook.com"><img src="img/icon-facebook.png" alt="facebook" data-in-effect="pulse" /></a>
+            <a target="_blank" href="http://pinterest.com"><img src="img/icon-pinterest.png" alt="pinterest" /></a>
+            <a target="_blank" href="http://instagram.com"><img src="img/icon-instagram.png" alt="instagram" /></a>
+            <a target="_blank" href="mailto:info@westbrook.com"><img src="img/icon-email.png" alt="email" /></a>
         </nav>
         <form>
             <label for="newsletter">Sign up for our weekly email newsletter!</label>
@@ -51,6 +123,13 @@
         </form>
         <p>Copyright 2017 by Westbrook Bakery</p>
     </footer>
-    <script src="js/main.js"></script>
+</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.slimmenu.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

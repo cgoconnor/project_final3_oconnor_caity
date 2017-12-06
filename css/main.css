@@ -56,6 +56,11 @@ main {
     background-position: center;
 }
 
+.products,
+.about {
+    background-color: #c47db1;
+}
+
 header,
 footer {
     background-color: #ffffff;
@@ -76,12 +81,14 @@ h2 {
 h1 {
     font-family: 'Bakery', sans-serif;
     font-size: 3rem;
+    text-align:center;
 }
 
 h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 p,
@@ -93,6 +100,10 @@ label {
     font-family: 'Comfortaa', sans-serif;
     font-size: 1rem;
     color: #135a72;
+}
+
+img {
+    width: 100%;
 }
 
 ul {
@@ -206,6 +217,10 @@ a:hover {
     width: 100%;
 }
 
+ul.slimmenu li {
+    padding: 0;
+}
+
 .main-nav,
 .menu-item a,
 ul.slimmenu li a {
@@ -273,7 +288,19 @@ input {
     border: white solid 3px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #history .wrap,
-#locations .wrap {
+#locations .wrap,
+#contact .wrap,
+#cakes .wrap,
+#pastries .wrap,
+#breads .wrap {
     margin: 1rem 0;
+}
+
+.slideout {
+    display: none;
 }
