@@ -412,8 +412,9 @@
             <a target="_blank" href="mailto:info@westbrook.com"><img src="img/icon-email.png" alt="email" /></a>
         </nav>
         <form>
-            <label for="newsletter">Sign up for our weekly email newsletter!</label>
-            <input type="text" name="newsletter">
+            <label for="email">Sign up for our weekly email newsletter!</label>
+            <input type="email" name="email" validation="email" data-validation="email" placeholder="email address">
+            <p class="alert">Your email has been submitted. Look for your first Newsletter soon!</p>
         </form>
         <p>Copyright 2017 by Westbrook Bakery</p>
     </footer>
@@ -424,6 +425,7 @@
 <script src="js/jquery.lettering.js"></script>
 <script src="js/jquery.textillate.js"></script>
 <script src="js/parallax.min.js"></script>
+<script src="js/jquery.form-validator.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

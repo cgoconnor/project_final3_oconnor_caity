@@ -2,50 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Westbrook Bakery - Services</title>
+    <title>Westbrook Bakery</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/slimmenu.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    <header>
-        <h1>Westbrook Bakery</h1>
-        <nav>
-            <ul>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="products clearfix">
+    <div class="off-canvas-wrapper">
+        <div id="off-canvas" class="off-canvas position-left" data-off-canvas>My Off-Canvas</div>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <header>
+            <a href="index.html"><img src="img/westbrook-bakery-logo.png" alt="Westbrook Bakery" class="logo" /></a>
+            <h1 class="hide">Westbrook Bakery</h1>
+            <nav class="main-nav clearfix">
+                <ul id="navigation" class="slimmenu">
+                    <li class="menu-item has-submenu"><a href="services.html">Classes</a>
+                        <ul class="submenu">
+                            <li><a href="services.html#catering">Schedule</a></li>
+                            <li><a href="services.html#classes">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="products.html">Products</a>
+                        <ul class="submenu">
+                            <li><a href="products.html#cakes">Cakes and Cupcakes</a></li>
+                            <li><a href="products.html#pastries">Pastries, Scones and Cookies</a></li>
+                            <li><a href="products.html#breads">Breads</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="about.html">About</a>
+                        <ul class="submenu">
+                            <li><a href="about.html#history">Our Story</a></li>
+                            <li><a href="about.html#locations">Locations</a>
+                                <ul class="subsubmenu">
+                                    <li><a href="about.html#downtown">Downtown</a></li>
+                                    <li><a href="about.html#south-valley">South Valley</a></li>
+                                    <li><a href="about.html#west">West</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html#history">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        <h1>Services</h1>
-        <p>Lorem ipsum</p>
+        <h1>Classes</h1>
+        <p>All of our classes are held at our South Valley location in Draper.</p>
         <article id="classes">
-            <h1>Classes</h1>
-            <p>All of our classes are held at our South Valley location in Draper.</p>
             <section id="schedule">
                 <h2>Class schedule</h2>
+                <h3>Cake Decorating</h3>
+                <h3>Macron Demonstration</h3>
+                <button><a href="about.html#south-valley">Get Directions</a></button>
             </section>
             <section id="faq">
                 <h2>Class FAQ</h2>
+                <ul>
+                    <li>Q: How much do classes cost?</li>
+                        <ul>
+                            <li>A: Demonstrations are free, but you must register in advance, as space is limited. Decorating classes are $25.00. This covers the cost of supplies</li>
+                        </ul>
+                    <li>Q: Do I need to bring anything?</li>
+                        <ul>
+                            <li>A: For demonstrations, you do not need to bring anything, except a pen and notebook to take notes if you wish. For decorating classes, the cost of the class includes supplies. However, you are welcome to bring your own.</li>
+                        </ul>
+                    <li>Q: Do I get to sample the treats?</li>
+                        <ul>
+                            <li>A: Yes! For demonstrations, we'll make sure you get a sample of whatever we make. For decorating classes, you get to take home the mini-cake you decorate.</li>
+                        </ul>
+                    </ul>
             </section>
         </article>
     </main>
     <footer>
         <nav id="social-media">
-            <a href="facebook.com"><img src="" alt="facebook" /></a>
-            <a href="pinterest.com"><img src="" alt="pinterest" /></a>
-            <a href="instagram.com"><img src="" alt="instagram" /></a>
-            <a href="mailto:info@westbrook.com"><img src="" alt="email" /></a>
+            <a target="_blank" href="http://facebook.com"><img src="img/icon-facebook.png" alt="facebook" data-in-effect="pulse" /></a>
+            <a target="_blank" href="http://pinterest.com"><img src="img/icon-pinterest.png" alt="pinterest" /></a>
+            <a target="_blank" href="http://instagram.com"><img src="img/icon-instagram.png" alt="instagram" /></a>
+            <a target="_blank" href="mailto:info@westbrook.com"><img src="img/icon-email.png" alt="email" /></a>
         </nav>
         <form>
-            <label for="newsletter">Sign up for our weekly email newsletter!</label>
-            <input type="text" name="newsletter">
+            <label for="email">Sign up for our weekly email newsletter!</label>
+            <input type="email" name="email" validation="email" data-validation="email" placeholder="email address">
+            <p class="alert">Your email has been submitted. Look for your first Newsletter soon!</p>
         </form>
         <p>Copyright 2017 by Westbrook Bakery</p>
     </footer>
-    <script src="js/main.js"></script>
+</div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.slimmenu.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/jquery.textillate.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.form-validator.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
