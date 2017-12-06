@@ -129,7 +129,7 @@ $(document).ready(function () {
         },
         eventRender: function (calEvent, element) {
             element.attr('href', 'javascript:void(0);');
-            element.hover(function () {
+            element.click(function () {
                 $('#startTime').html(calEvent.start.format('MMM Do h:mm A'));
                 $('#eventContent').dialog({ modal: true, title: calEvent.title });
             });

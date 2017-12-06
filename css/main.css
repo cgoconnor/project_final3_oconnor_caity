@@ -186,7 +186,7 @@ article p {
         -webkit-box-shadow: -.3rem .3rem #135a72;
     }
 
-button:hover {
+primary-button:hover {
     box-shadow: none;
         -webkit-box-shadow: none;
     transform: translate(-.3rem, .3rem);
@@ -200,7 +200,8 @@ button:hover {
         -webkit-box-shadow: none;
 }
 
-.secondary-button:hover {
+.secondary-button:hover,
+#social-media a img:hover {
     transform: scale(1.1, 1.1);
         -webkit-transform: scale(1.1, 1.1);
 }
