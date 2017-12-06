@@ -304,3 +304,28 @@ input {
 .slideout {
     display: none;
 }
+
+.table {
+    margin: 1rem auto;
+    width: 96%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 0;
+    border: 1px solid #c47db1;
+    background-color: rgba(255,255,255,.75);
+}
+
+td p {
+    padding: .5rem;
+}
+
+.item {
+    margin: 1rem 0;
+    border-bottom: 2px dotted;
+}

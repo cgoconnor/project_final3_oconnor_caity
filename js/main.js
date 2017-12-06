@@ -16,10 +16,10 @@ $(document).ready(function () {
 
 //custom jquery to slide out content on products page - tutorial: https://www.hongkiat.com/blog/jquery-sliding-navigation/
 //https://www.w3schools.com/jquery/jquery_slide.asp
-    $('.category').on('click', function (e) {
+    $('#cakes .category').on('click', function (e) {
         e.preventDefault();
 
-        var display = $('.slideout').css('display');
+        var display = $('#cakes .slideout').css('display');
 
         if (display === 'none') {
             // $(this).addClass('open');
@@ -28,13 +28,15 @@ $(document).ready(function () {
             hideItems();
         }
         function showItems() {
-            $('.slideout').slideDown('slow');
-            $('.cat-photo').slideUp('fast');
+            $('#cakes .slideout').slideDown('slow');
+            $('#cakes .cat-photo').slideUp('fast');
+            $('#cakes .category').text('Close Section');
         }
 
         function hideItems() {
-            $('.slideout').slideUp('slow');
-            $('.cat-photo').slideDown('fast');
+            $('#cakes .slideout').slideUp('slow');
+            $('#cakes .cat-photo').slideDown('fast');
+            $('#cakes .category').text('Cakes and Cupcakes');
         }
     }); // end click event handler
 });
