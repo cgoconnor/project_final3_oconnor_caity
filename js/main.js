@@ -38,5 +38,53 @@ $(document).ready(function () {
             $('#cakes .cat-photo').slideDown('fast');
             $('#cakes .category').text('Cakes and Cupcakes');
         }
-    }); // end click event handler
+    });
+
+    $('#pastries .category').on('click', function (e) {
+        e.preventDefault();
+
+        var display = $('#pastries .slideout').css('display');
+
+        if (display === 'none') {
+            // $(this).addClass('open');
+            showItems();
+        } else {
+            hideItems();
+        }
+        function showItems() {
+            $('#pastries .slideout').slideDown('slow');
+            $('#pastries .cat-photo').slideUp('fast');
+            $('#pastries .category').text('Close Section');
+        }
+
+        function hideItems() {
+            $('#pastries .slideout').slideUp('slow');
+            $('#pastries .cat-photo').slideDown('fast');
+            $('#pastries .category').text('Pastries, Scones, and Cookies');
+        }
+    });
+
+    $('#breads .category').on('click', function (e) {
+        e.preventDefault();
+
+        var display = $('#breads .slideout').css('display');
+
+        if (display === 'none') {
+            // $(this).addClass('open');
+            showItems();
+        } else {
+            hideItems();
+        }
+        function showItems() {
+            $('#breads .slideout').slideDown('slow');
+            $('#breads .cat-photo').slideUp('fast');
+            $('#breads .category').text('Close Section');
+        }
+
+        function hideItems() {
+            $('#breads .slideout').slideUp('slow');
+            $('#breads .cat-photo').slideDown('fast');
+            $('#breads .category').text('Breads');
+        }
+    });
 });
