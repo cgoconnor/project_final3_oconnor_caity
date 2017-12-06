@@ -29,10 +29,12 @@ $(document).ready(function () {
         }
         function showItems() {
             $('.slideout').slideDown('slow');
+            $('.cat-photo').slideUp('fast');
         }
 
         function hideItems() {
             $('.slideout').slideUp('slow');
+            $('.cat-photo').slideDown('fast');
         }
     }); // end click event handler
 });
