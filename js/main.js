@@ -89,12 +89,15 @@ $(document).ready(function () {
     });
 
     //validation plugin
+    var $label = $('label[for="email"]');
     var $successMsg = $('.alert');
     $.validate({
         errorMessageClass: 'error',
         onSuccess: function () {
             $successMsg.show();
+            $label.hide();
             return false; // stops submitting
         }
     });
+
 });
