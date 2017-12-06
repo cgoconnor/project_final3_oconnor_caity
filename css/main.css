@@ -171,7 +171,7 @@ article p {
     }
 }
 
-button {
+.primary-button {
     margin: 1rem 0 0;
     padding: 1rem .8rem;
     cursor: pointer;
@@ -392,4 +392,11 @@ input[type="email"] {
 
 #eventContent {
     display: none;
+}
+
+#eventContent p {
+    position: absolute;
+    z-index:999;
+    background-color:white;
+    width: 90%;
 }

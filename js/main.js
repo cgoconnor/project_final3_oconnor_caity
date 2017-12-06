@@ -107,6 +107,7 @@ $(document).ready(function () {
         events: [
             {
                 title: 'Macron Demonstration',
+                description: 'Macron Demonstration',
                 start: '2017-12-07T19:00:00',
                 end: '2017-12-07T20:00:00'
             },
@@ -121,11 +122,16 @@ $(document).ready(function () {
                 end: '2018-01-04T20:00:00'
             }
         ],
+        header: {
+            left: '',
+            center: 'prev title next',
+            right: ''
+        },
         eventRender: function (calEvent, element) {
-            element.click(function () {
+            element.attr('href', 'javascript:void(0);');
+            element.hover(function () {
                 $('#startTime').html(calEvent.start.format('MMM Do h:mm A'));
-                $('#eventInfo').html(calEvent.title);
-                $('#eventContent').addClass('show')
+                $('#eventContent').dialog({ modal: true, title: calEvent.title });
             });
         }
     });
