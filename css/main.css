@@ -329,3 +329,7 @@ td p {
     margin: 1rem 0;
     border-bottom: 2px dotted;
 }
+
+th p {
+    text-align: center;
+}
