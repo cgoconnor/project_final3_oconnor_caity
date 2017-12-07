@@ -58,15 +58,15 @@ main {
 }
 
 .services {
-    background-image: url(../img/index-background.jpg);
+    background-image: url(../img/services-background.jpg);
 }
 
 .products {
-    background-image: url(../img/index-background.jpg);
+    background-image: url(../img/products-background.jpg);
 }
 
 .about {
-    background-image: url(../img/index-background.jpg);
+    background-image: url(../img/about-background.jpg);
 }
 
 .index,
