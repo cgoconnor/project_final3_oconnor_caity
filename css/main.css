@@ -355,7 +355,8 @@ td p {
 }
 
 .cat-photo,
-.item img {
+.item img,
+.icon {
     max-width: 300px;
     margin: auto;
 }
