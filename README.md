@@ -1,15 +1,25 @@
-## Final part 3
+# Final Part 3
 
-# Links
+## Links
 
 * GitHub: https://github.com/cgoconnor/project_final3_oconnor_caity
 
 * Web host:
 http://caitygoconnor.com/project_final3_oconnor_caity
 
-* W3C Validator:
+* W3C Validator
+    * Index.html: https://validator.w3.org/nu/?doc=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Findex.html
+    * about.html: https://validator.w3.org/nu/?doc=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fabout.html
+    * products.html: https://validator.w3.org/nu/?doc=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fproducts.html
+    * services.html:
+    https://validator.w3.org/nu/?doc=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fservices.html
 
-* HTML Outliner:
+* HTML Outliner
+    * Index.html: https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2F
+    * about.html: https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fabout.html
+    * products.html: https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fproducts.html
+    * services.html:
+    https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Fcaitygoconnor.com%2Fproject_final3_oconnor_caity%2Fservices.html
 
 ## Resources
 
@@ -53,3 +63,6 @@ I reviewed the list of deductions for this project
 and in the syllabus.
 
 ## Comments
+In the Validator, it doesn't like that I've nested a form within a form (for the pop up based off of the email input field), and since it is ignoring that tag, it's finding errors after it that aren't actually errors. I probably should have added HTML with javascript instead of actually including it in the html document to avoid this. Live and learn.
+
+Also for the validator, for the error: "Error: Attribute validation not allowed on element input at this point." This attribute was part of the validation plugin, so I just left it.
