@@ -70,7 +70,7 @@ main {
 }
 
 .index,
-.services
+.services,
 .products,
 .about {
     background-color: #c47db1;
@@ -199,7 +199,7 @@ article p {
 
 .primary-button,
 .secondary-button {
-    margin: 1rem 0 0;
+    margin: 1rem auto;
     padding: 1rem .8rem;
     cursor: pointer;
     background-color: #c47db1;
@@ -207,6 +207,8 @@ article p {
     border-radius: .8rem;
     box-shadow: -.3rem -.3rem #135a72;
         -webkit-box-shadow: -.3rem .3rem #135a72;
+        display:flex;
+    align-self: center;
 }
 
 .primary-button:hover {
@@ -369,7 +371,8 @@ td p {
     border-bottom: 2px dotted;
 }
 
-th p {
+th p,
+.center {
     text-align: center;
 }
 
@@ -536,14 +539,12 @@ footer p {
         margin: 1rem auto;
     }
 
-    #schedule.wrap {
-        width: 99%;
-    }
-
+    #schedule.wrap,
     #faq.wrap,
-    #history div.wrap {
-        width: 80%;
-        max-width: 700px;
+    #history div.wrap  {
+        width: 99%;
+        max-width: 940px;
+        margin: 1.4rem auto;
     }
 }
 
@@ -552,7 +553,7 @@ footer p {
         display: inline-block;
         width: 30%;
         max-width: 220px;
-        padding: 1rem, 0, 0, 1rem;
+        padding: 1rem 0 0 1rem;
     }
 }
 

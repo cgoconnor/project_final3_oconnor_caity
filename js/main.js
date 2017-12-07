@@ -145,7 +145,6 @@ var submitForm = document.getElementById('email-form');
 submitForm.onsubmit = popupFunction;
 
 var monthMenu = document.getElementById('month');
-var monthSelect = document.getElementsByClassName('month');
 monthMenu.onchange = birthdayFunction;
 function birthdayFunction() {
     var month = monthMenu.value;
