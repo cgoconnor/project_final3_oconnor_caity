@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+//slim menu plugin for main navigation on every page
     $('#navigation').slimmenu(
         {
             resizeWidth: '480',
@@ -11,6 +13,8 @@ $(document).ready(function () {
     $(function () {
         $('#social-media a img:hover').textillate();
     });
+
+//Custom jquery to make iframes same height as width
     var cw = $('.map iframe').width();
     $('.map iframe').css({'height': cw + 'px'});
 
@@ -22,7 +26,6 @@ $(document).ready(function () {
         var display = $('#cakes .slideout').css('display');
 
         if (display === 'none') {
-            // $(this).addClass('open');
             showItems();
         } else {
             hideItems();
@@ -88,7 +91,7 @@ $(document).ready(function () {
         }
     });
 
-    //validation plugin
+//validation plugin for email input in footer on every page
     var $label = $('label[for="email"]');
     var $successMsg = $('.alert');
     $.validate({
@@ -100,8 +103,7 @@ $(document).ready(function () {
         }
     });
 
-    //calendar plugin
-
+//calendar plugin on classes page
     $('#calendar').fullCalendar({
         events: [
             {
@@ -136,6 +138,7 @@ $(document).ready(function () {
     });
 });
 
+//Custom javascript - pop up after user submits email to ask for birthday
 function popupFunction() {
     var popup = document.getElementById('myPopup');
     popup.classList.toggle('show');
