@@ -145,26 +145,28 @@ var submitForm = document.getElementById('email-form');
 submitForm.onsubmit = popupFunction;
 
 var monthMenu = document.getElementById('month');
+var monthSelect = document.getElementsByClassName('month');
+monthMenu.onchange = birthdayFunction;
 function birthdayFunction() {
     var month = monthMenu.value;
     var twentyNine = document.getElementById('month29');
     var thirty = document.getElementById('month30');
     var thirtyOne = document.getElementById('month31');
-    if (month.value === [
-        'jan',
-        'mar',
-        'may',
-        'jul',
-        'aug',
-        'oct',
-        'dec'
-    ]) {
+    var dayLabel = document.getElementById('day');
+    if (month.value === ['jan', 'mar', 'may', 'jul', 'aug', 'oct', 'dec']) {
         thirtyOne.style.display = 'block';
-    } else if (month === 'February') {
+        dayLabel.style.display = 'block';
+        twentyNine.style.display = 'none';
+        thirty.style.display = 'none';
+    } else if (month === 'feb') {
         twentyNine.style.display = 'block';
+        dayLabel.style.display = 'block';
+        thirty.style.display = 'none';
+        thirtyOne.style.display = 'none';
     } else {
         thirty.style.display = 'block';
+        dayLabel.style.display = 'block';
+        twentyNine.style.display = 'none';
+        thirtyOne.style.display = 'none';
     }
 }
-
-monthMenu.onclick = birthdayFunction;
