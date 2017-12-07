@@ -357,7 +357,9 @@ td p {
 .cat-photo,
 .item img {
     max-width: 300px;
+    margin: auto;
 }
+
 th p,
 .center {
     text-align: center;
