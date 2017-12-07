@@ -55,14 +55,28 @@ main {
 
 .index {
     background-image: url(../img/index-background.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
+.services {
+    background-image: url(../img/index-background.jpg);
+}
+
+.products {
+    background-image: url(../img/index-background.jpg);
+}
+
+.about {
+    background-image: url(../img/index-background.jpg);
+}
+
+.index,
+.services
 .products,
 .about {
     background-color: #c47db1;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header,
@@ -101,7 +115,10 @@ p,
 li,
 a,
 label,
-input {
+input,
+select,
+option,
+button {
     padding: .6rem 0;
     margin: 0 auto;
     font-family: 'Comfortaa', sans-serif;
@@ -170,22 +187,28 @@ article p {
 }
 
 
-.primary-button {
+.primary-button,
+.primary-button a {
+    color: #ffffff;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+
+    }
+
+.primary-button,
+.secondary-button {
     margin: 1rem 0 0;
     padding: 1rem .8rem;
     cursor: pointer;
     background-color: #c47db1;
     border: none;
     border-radius: .8rem;
-    color: #ffffff;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
     box-shadow: -.3rem -.3rem #135a72;
         -webkit-box-shadow: -.3rem .3rem #135a72;
-    }
+}
 
-primary-button:hover {
+.primary-button:hover {
     box-shadow: none;
         -webkit-box-shadow: none;
     transform: translate(-.3rem, .3rem);
@@ -252,6 +275,10 @@ ul.slimmenu li .submenu:last-child {
 ul.slimmenu li .submenu li .subsubmenu li a:hover,
 ul.slimmenu li .submenu li a:hover {
     background-color: #ffffff;
+}
+
+ul.slimmenu li.menu-item a:hover {
+    background-color: #c47db1;
 }
 
 ul.slimmenu li .submenu li .subsubmenu li a {
@@ -346,7 +373,7 @@ th p {
 }
 
 input[type="email"] {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     padding: .5rem;
     margin: auto;
@@ -420,12 +447,18 @@ footer p {
     margin: auto;
 }
 
+#email-form {
+    width: 90%;
+    margin: auto;
+}
+
 
 /* Popup container */
 .popup {
     position: relative;
-    display: inline-block;
+    display: block;
     cursor: pointer;
+    text-align: center;
 }
 
 .popup .popuptext {
@@ -469,6 +502,18 @@ footer p {
 }
 
 @media (min-width: 480px) {
+    ul.slimmenu li {
+        width: 27%;
+    }
+
+    #nav-home {
+        width: 19%;
+    }
+
+    ul.slimmenu li .submenu li {
+        width: 100%;
+    }
+
     .wrap {
         width: 60%;
         margin: 1rem auto;
@@ -494,7 +539,6 @@ footer p {
         vertical-align: top;
         width: 29%;
         margin: .5rem;
-        display: inline-block;
     }
 
     #navigation {
