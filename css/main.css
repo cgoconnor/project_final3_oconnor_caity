@@ -541,7 +541,10 @@ footer p {
 
     #schedule.wrap,
     #faq.wrap,
-    #history div.wrap  {
+    #history div.wrap,
+    #downtown.wrap,
+    #south-valley.wrap,
+    #west.wrap  {
         width: 99%;
         max-width: 940px;
         margin: 1.4rem auto;
