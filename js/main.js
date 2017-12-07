@@ -7,6 +7,8 @@ $(document).ready(function () {
             easingEffect: null,
             indentChildren: false,
             childrenIndenter: '&nbsp;',
+            expandIcon: '<i>+</i>',
+            collapseIcon: '<i>-</i>'
         });
     $(function () {
         $('#social-media a img:hover').textillate();
